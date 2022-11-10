@@ -1,9 +1,59 @@
 // 조건문은 프로그램의 흐름을 변경할 때 사용된다. 특정 조건에 따라 흐름이 분기되는데, 해당 조건은 boolean 타입으로 지정된다.
 
+// if (true) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// const a = 3;
+// const b = 3;
+// const c = 5;
+
+// if (a > 1) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// if (a == b || b == c) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
 // 1. signiture : if(condition){true logic} else {false logic}
 // 조건은 boolean 타입이 리턴되기 때문에 비교 연산이나 논리 연산의 값을 사용한다.
 
+// const date = new Date();
+// console.log(date);
+// const hour = date.getHours();
+// console.log(hour);
+
+// if (hour > 12) {
+//   console.log("오후");
+// } else {
+//   if (hour <= 9) {
+//     console.log("아침");
+//   } else {
+//     console.log("점심");
+//   }
+//   console.log("오전");
+// }
 // 2. 중첩 if 조건문
+
+const date = new Date();
+console.log(date);
+const hour = date.getHours();
+if (hour < 12) {
+  // 0시 ~ 11시
+  console.log("오전");
+} else if (hour < 18 && hour >= 12) {
+  //12시 ~ 17시
+  console.log("오후");
+} else {
+  //18시 ~ 23시
+  console.log("밤");
+}
 
 // 3. if else if 조건문
 // const date = new Date();
