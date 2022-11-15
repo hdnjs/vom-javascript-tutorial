@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btns {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2rem;
+  width: calc(50% - 0.25rem);
+  background: rgb(93, 197, 229);
+  color: #fff;
+  font-size: 20px;
+}
+
+.img_box {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0.5rem;
+}
+
+.img_box img {
+  width: 100%;
+}
